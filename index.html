@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Nim</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="container splash">
+			<div class="info">
+				<h1>About</h1>
+				<p>The game is ultra simple, you have three piles of matches <br> with 3, 5 and 7 matches in each pile. <br> The person who takes the last match wins the game.</p>
+				<button onclick="game.start()">Play</button>
+			</div>
+		</div>
+		<div class="container game" style="display:none">
+			<div class="info">
+				<h1 class="header">Game help</h1>
+				<p class="whos" style="font-weight:bold"></p>
+				<p class="move"></p>
+				<button class="repeat" onclick="game.reset()" style="display:none">Play</button>
+			</div>
+			<div class="status">
+			    
+			</div>
+			<div class="board">
+				<div class="pile pileOne"></div>
+				<div class="pile pileTwo"></div>
+				<div class="pile pileThree"></div>
+			</div>
+			
+		</div>
+		<script src="pubSub.js"></script>
+		<script src="nim.js"></script>
+		<script src="nimAi.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
